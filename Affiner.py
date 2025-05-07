@@ -1,6 +1,3 @@
-#m=int(input('Please enter m:'))
-#k=int(input('please enter k:'))
-#ch=input('Please Enter The operation you want Encryption or Decryption (e/d):').lower()
 mod=26
 alpha={
     'a':0,
@@ -58,8 +55,6 @@ beta = {
   24: "y",
   25: "z",
 }
-#plain=input('please enter plain phrase:').lower()
-#p=alpha[input('please enter char:').lower()]
 
 def modular_inverse(m, mod, j):
     for i in range(100):
@@ -88,9 +83,6 @@ def eaffine(m, k, p):
         if affine>-1 and affine <26:
             break
     return beta[affine]
-
-#min = modular_inverse(m, mod, j)
-#print(affine(min, k, p))
 
 def affine(mod, alpha, modular_inverse, daffine, eaffine):
 
